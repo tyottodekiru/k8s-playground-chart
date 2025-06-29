@@ -43,4 +43,47 @@ entries:
     urls:
     - https://github.com/tyottodekiru/k8s-playground-chart/releases/download/k8s-playground-0.1.4/k8s-playground-0.1.4.tgz
     version: 0.1.4
-generated: "2025-06-29T14:11:22.379936806Z"
+  - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2025-06-29T14:26:34.159447821Z"
+    description: A Helm chart for k8s Playground application
+    digest: 9aaa61c8e07abd00169d8198b34c69e9a00baae771dd40f8b19b00a5b11710bf
+    home: https://github.com/tyottodekiru/k8s-playground
+    keywords:
+    - kubernetes
+    - playground
+    - dind
+    - development
+    maintainers:
+    - email: gtpgx305@gmail.com
+      name: k8s-playground
+    name: k8s-playground
+    sources:
+    - https://github.com/tyottodekiru/k8s-playground
+    type: application
+    urls:
+    - https://github.com/tyottodekiru/k8s-playground-chart/releases/download/k8s-playground-0.1.2/k8s-playground-0.1.2.tgz
+    version: 0.1.2
+  k8s-playground-0.1.2:
+  - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2025-06-29T14:26:34.038176448Z"
+    description: A Helm chart for k8s Playground application
+    digest: 6235a9dc77735116fcb685ef514c8213f17abbb30d9809627cb40af80e9cfe21
+    home: https://github.com/tyottodekiru/k8s-playground
+    keywords:
+    - kubernetes
+    - playground
+    - dind
+    - development
+    maintainers:
+    - email: gtpgx305@gmail.com
+      name: k8s-playground
+    name: k8s-playground-0.1.2
+    sources:
+    - https://github.com/tyottodekiru/k8s-playground
+    type: application
+    urls:
+    - https://github.com/tyottodekiru/k8s-playground-chart/releases/download/k8s-playground-0.1.2-0.1.2/k8s-playground-0.1.2-0.1.2.tgz
+    version: 0.1.2
+generated: "2025-06-29T14:26:34.159459343Z"
