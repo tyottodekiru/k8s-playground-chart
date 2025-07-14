@@ -43,6 +43,8 @@ spec:
               value: {{ .Values.global.baseURL | quote }}
             - name: GIN_MODE
               value: {{ .Values.ginMode | default "release" | quote }}
+            - name: NAMESPACE
+              value: {{ .Values.playground.namespace | quote }}
 
             - name: AUTH_METHOD
               value: {{ .Values.controlPlane.authentication.method | quote }}

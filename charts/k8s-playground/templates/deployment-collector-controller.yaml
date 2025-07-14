@@ -33,6 +33,8 @@ spec:
           env:
             - name: REDIS_URL
               value: {{ if .Values.controlPlane.infrastructure.redis.external.url }}{{ .Values.controlPlane.infrastructure.redis.external.url | quote }}{{ else }}"redis://{{ include "k8s-playground.fullname" . }}-redis:{{ .Values.controlPlane.infrastructure.redis.external.port }}"{{ end }}
+            - name: NAMESPACE
+              value: {{ .Values.playground.namespace | quote }}
           resources:
             {{- toYaml .Values.controlPlane.controllers.backend.collector.resources | nindent 12 }}
       {{- with .Values.deployment.scheduling.nodeSelector }}

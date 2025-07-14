@@ -64,7 +64,9 @@ spec:
       name: logging-data
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: {{ .Values.controlPlane.controllers.backend.logging.persistence.storageClass | default "default" }}
+      {{- if .Values.controlPlane.controllers.backend.logging.persistence.storageClass }}
+      storageClassName: {{ .Values.controlPlane.controllers.backend.logging.persistence.storageClass }}
+      {{- end }}
       resources:
         requests:
           storage: {{ .Values.controlPlane.controllers.backend.logging.persistence.size | default "10Gi" }}
